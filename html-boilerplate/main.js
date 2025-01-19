@@ -35,4 +35,17 @@ let p=document.createElement("p")
 p.textContent="ME TOO!"
 div2.appendChild(p)
 
+let b = document.createElement("button")
+b.textContent="click me"
+div2.appendChild(b)
+// b.style.backgroundColor="red"
+b.style.border="10px solid black"
+b.style.borderRadius="10px"
+b.addEventListener('click', (e)=>{
+    console.log(e.target);
+});
+b.addEventListener("click", function (e) {
+    e.target.style.background = "blue";
+  });
+  
 
